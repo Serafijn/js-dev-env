@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   "homepage": "https://github.com/njifares/js-dev-env#readme",
   "dependencies": {},
   "devDependencies": {
+    "chalk": "^2.4.1",
     "express": "^4.16.3",
     "open": "0.0.5",
     "path": "^0.12.7"
