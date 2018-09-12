@@ -14,5 +14,11 @@
   "bugs": {
     "url": "https://github.com/njifares/js-dev-env/issues"
   },
-  "homepage": "https://github.com/njifares/js-dev-env#readme"
+  "homepage": "https://github.com/njifares/js-dev-env#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.3",
+    "open": "0.0.5",
+    "path": "^0.12.7"
+  }
 }
