@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
-    "start": "node buildScripts/srcServer.js"
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "babel-node buildScripts/srcServer.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,11 @@
   "homepage": "https://github.com/njifares/js-dev-env#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "chalk": "^2.4.1",
     "express": "^4.16.3",
     "open": "0.0.5",
