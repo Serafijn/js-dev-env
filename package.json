@@ -2,6 +2,7 @@
   "name": "js-dev-env",
   "version": "0.0.0",
   "description": "",
+  "private": true,
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "babel-node buildScripts/srcServer.js"
@@ -22,9 +23,15 @@
     "@babel/core": "^7.0.1",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
     "chalk": "^2.4.1",
+    "css-loader": "^1.0.0",
     "express": "^4.16.3",
     "open": "0.0.5",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.3.0"
   }
 }
