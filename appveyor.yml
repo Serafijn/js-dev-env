@@ -1,0 +1,22 @@
+# test against this environment
+environment:
+  matrix:
+  - nodejs_version: "10"
+
+# install scripts
+install:
+  # install node version
+  - ps: "Install-Product node $env:nodejs_version"
+  # install modules
+  - npm install
+
+# post-install tets scripts
+test_script:
+  # output usefull for debugging
+  - node --version
+  - npm --version
+  # run tests
+  - npm test
+
+# don't actually build
+build: off
