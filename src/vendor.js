@@ -1,2 +1,1 @@
-/* eslint-disable no-unused-vars */
-import numeral from 'numeral'
+// import vendor libraries here

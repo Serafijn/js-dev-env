@@ -2,12 +2,7 @@ import {expect} from 'chai'
 import { JSDOM } from 'jsdom'
 import fs from 'fs'
 
-describe('A sample test', () => {
-  it('should pass', () => {
-    expect(true).to.equal(true)
-  })
-})
-
+// Sample test
 describe('index.html', () => {
   it('should say hello', () => {
     const index = fs.readFileSync('./src/index.html', 'utf-8')

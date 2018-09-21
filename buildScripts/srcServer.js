@@ -18,10 +18,4 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../src/index.html')))
 
-app.listen(PORT, (err) => {
-  if (err) {
-    console.log(err)
-  } else {
-    open(`http://localhost:${PORT}`)
-  }
-})
+app.listen(PORT, (err) => err ? console.log(err) : open(`http://localhost:${PORT}`))

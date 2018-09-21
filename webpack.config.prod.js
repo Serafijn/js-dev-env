@@ -31,8 +31,8 @@ export default {
   ],
   module: {
     rules: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: 'babel-loader'},
-      {test: /\.css$/, use: [{loader: MiniCssExtractPlugin.loader}, 'css-loader']}
+      { test: /\.js$/, exclude: /node_modules/, loaders: 'babel-loader' },
+      { test: /\.css$/, use: [{loader: MiniCssExtractPlugin.loader}, 'css-loader'] }
     ]
   }
 }

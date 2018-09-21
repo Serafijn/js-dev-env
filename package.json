@@ -1,7 +1,7 @@
 {
   "name": "js-dev-env",
   "version": "0.0.0",
-  "description": "",
+  "description": "A JavaScript development environment starter pack. Includes linting, transpiling, testing, bundling, ...",
   "private": true,
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
@@ -26,9 +26,7 @@
     "url": "https://github.com/njifares/js-dev-env/issues"
   },
   "homepage": "https://github.com/njifares/js-dev-env#readme",
-  "dependencies": {
-    "numeral": "^2.0.6"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
